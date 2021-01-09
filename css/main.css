@@ -1,0 +1,668 @@
+/* Web safe fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #060211;
+  --secondary-color: #0b051a;
+  --accent1-color: #50378d;
+  --accent2-color: #2e7d8b;
+  --accent3-color: #eef7fb;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Libre Baskerville', serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #060211;  /* headlines on a white background */ 
+  --headline-color-on-color: #eef7fb; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #060211; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #eef7fb; /* paragraph text on a colored background */ 
+  --text-background-color: #060211;
+  --nav-link-color: #060211;
+  --nav-background-color: #eef7fb;
+  --nav-hover-link-color: #E7C24F;
+  --nav-hover-background-color: #396E94;
+}
+
+body {
+  font-family: "Libre", "Baskerville", "Sans";
+  background-color: var(--accent3-color);
+  color: var(--primary-color);
+  margin: 0em 1em 0em 1em;
+}
+p {
+  color: var(--primary-color);
+  line-height: 1.3em;
+  padding: 0px 5px 0px 5px;
+  font-family: var(--paragraph-font);
+  font-size: 1em;
+  margin: 0em 1em 0em 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+  background-color: var(--primary-color);
+  color: #eef7fb;
+  padding: 5px 5px 5px 1rem; /* Can you mix values, is this against best practices? */
+  border-radius: 4px;
+  font-family: var(--heading-font);
+  font-size: 3vh;
+}
+blockquote {
+  color: #060211;
+  font-size: .9em;
+  font-style: italic;
+  line-height: 1.3em;
+  padding-top: 0px;
+}
+header {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 120px repeat(1, 1fr);
+  align-items: center;
+  background-color: inherit;
+}
+img {
+  max-width: 100%;
+  padding: 5px 0px 5px 0px;
+  border-radius: 15px;
+}
+div {
+  margin-left: 20px;
+}
+nav a {
+  color: var(--headline-color-on-white);
+  text-align: center;
+  padding: .5em;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+nav ul {
+  margin: auto;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  list-style: none;
+}
+nav a:hover {
+  background-color: var(--accent2-color);
+  border-radius: 5px;
+}
+main {
+  margin: 0 auto;
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+  background-color: var(--accent3-color);
+}
+li {
+  min-width: 120px;
+}
+
+/* Form CSS Section */
+#mainForm {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-gap: .5em;
+}
+#form-p{
+  width: 350px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 80%;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  grid-column: 2/3;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} 
+form li + li {
+  margin-top: 1em;
+}
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+input:focus, textarea:focus {
+  /* Additioinal highlight for focuse elements */
+  border-color: #000;
+}
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provides space to tyope some text */
+  height: 5em;
+        }
+.button {
+  /* Align button with the text fields */
+  padding-left: 90px;
+}
+button {
+  /* This extra margin represent roughly the same space as the
+  the space between the labels and their text fields */
+  margin-left: 5.8em;
+  background-color: rgb(9, 17, 63);
+  color: seashell;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border-color: seashell;
+  display: inline-block;
+}
+#msg, #fName, #lName, #mail {
+  opacity: .5;
+  width: 75%;
+}
+#feedback {
+  background-color: rgb(204, 243, 250);
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .7em;
+  text-align: center;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.moveDown {
+  margin-top: 3em;
+}
+/* End Form CSS Section */
+
+/* Classes */
+.content {
+  margin: auto;
+}
+.log-box {
+  
+}
+.banner-box {
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+.baner-box img {
+  width: 100%;
+}
+.bb-img {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+.action {
+  grid-column: 1/2;
+  grid-row: 1;  
+  margin: 10px;
+  
+}
+.action button {
+  line-height: 1.2em;
+  width: 10em;
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  font-size: 1.1em;
+  margin: 1em 1em;
+  text-align: center;
+  border-radius: 15px;
+}
+.action button:hover {  
+  background-color: var(--primary-color);  
+}
+.bg-text-box {
+  background-color: var(--accent3-color);
+  opacity: .7;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.home-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: repeat(7, 1fr);
+}
+.home-headline-1 {
+  grid-column: 1/8;
+  grid-row: 1/1;
+}
+.home-paragraph-content{
+  grid-column: 1/8;
+  grid-row: 2;  
+}
+.license-free-heading {
+  grid-column: 1/8;
+  grid-row: 3;
+}
+.home-paragraph-1 {
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+.home-headline-2 {
+  grid-column: 1/8;
+  grid-row: 9;
+}
+.home-headline-3 {
+  grid-column: 1/8;
+  grid-row: 5;
+}
+.home-paragraph-2 {
+  grid-column: 1/6;
+  grid-row: 10;
+  margin: 10px;
+  padding: 20px;
+}
+.img-copyrighted {
+  grid-column: 6/8;
+  grid-row: 10/11;
+}
+.home-paragraph-3 {
+  grid-column: 1/8;
+  grid-row: 7/8;
+  text-align: center;
+  margin: 5px;
+}
+.main-footer {
+  color: #eef7fb;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(7 , 1fr);
+  margin: 5px;
+}
+.p-footer {
+  color: var(--paragraph-color-on-white);
+  grid-column: 1/4;
+  font-size: .8em;
+}
+.social {
+  text-align: right;
+  grid-column: 5/8;
+}
+.social img {
+  width: 40px;
+}
+.img-container-old {
+  grid-column: 1/8;
+  grid-row: 5/9
+}
+#license-free-img1 {
+  grid-column: 5/8;
+  grid-row: 4/5;
+}
+#license-free-img2 {
+  grid-column: 5;
+  grid-row: 5;
+}
+#license-free-img3 {
+  grid-column: 6;
+  grid-row: 5;
+}
+#license-free-img4 {
+  grid-column: 7;
+  grid-row: 5;
+}
+.license-free1 {
+  width: 200px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+.copyrighted {
+  max-width: 200px;
+  display: inline-block;
+}
+
+/* ID's */
+#main-section-banner1 {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+#baner-box img {
+  width: 100%;
+}
+#content {
+  background-color: inherit;
+  margin: 0 auto;
+}
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px; 
+}
+#mothers-day {
+  font-weight: 700;
+}
+#quote-1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+#home-quote1 {
+  grid-column: 1/8;
+  grid-row: 12;
+  text-align: center;
+}
+
+/* About Me CSS */
+#aboutMe-main {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 10px;
+}
+#about-head1 {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.about-subHeading {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+#about-subHeading1 {
+  font-size: 1.1em;
+  grid-column: 1/4;
+  grid-row: 9;
+}
+#about-subHeading2{
+  font-size: 1.1em;
+  grid-column: 1/2;
+}
+#about-p1 {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+#about-p2 {
+  grid-column: 1/3;
+}
+#about-p3 {
+  grid-column: 1/3;
+}
+#about-p4 {
+  grid-column: 1/4;
+}
+#about-p5 {
+  grid-column: 1/4;
+}
+#about-p6 {
+  grid-column: 1/4;
+}
+#about-p7 {
+  grid-column: 1/4;
+}
+#about-p8 {
+  grid-column: 1/4;
+}
+#aboutMe-img {
+  display: block;
+  width: 95%;
+  margin-right: 10px;
+  grid-column: 3/4;
+  grid-row: 2/5;
+}
+
+/* Wire Frame CSS */
+.wframe-img {
+  width: 75%;
+}
+#wFrame-quote {
+  grid-column: 1/8;
+  grid-row: 10/11;
+  text-align: center;
+  margin: 5px;
+}
+
+/* Rivers CSS This content is not used on this site. */
+.river-banner-box {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.river-baner-box img {
+  width: 100%;
+  object-fit: cover;
+}
+.rbb-img {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+.river-headline-1 {
+  grid-column: 1/8;
+  grid-row: 1/1;
+  margin: 5px;
+}
+.river-sub-headline-1 {
+  grid-column: 1/7;
+  grid-row: 2/2;
+  margin: 10px 0px -20px 20px;
+  padding: 10px 10px 0px 20px;
+  color: var(--paragraph-color-on-white);
+}
+.river-paragraph-1 {
+  grid-column: 1/5;
+  grid-row: 3/5;
+  margin: 0px 20px 20px 20px;
+  padding: 20px;
+}
+.river-adventure-img1 {
+  grid-column: 5/7;
+  grid-row: 3/4;
+  margin: 20px;
+}
+.river-photo-cred1 {
+  grid-column: 5/7;
+  grid-row: 4/5;
+  font-size: .7em;
+  margin: -25px 0px 0px 30px;
+}
+.river-sub-headline-2 {
+  grid-column: 1/7;
+  grid-row: 5;
+  margin: 5px 0px 5px 40px;
+  color: var(--paragraph-color-on-white);
+}
+.river-paragraph-2 {
+  grid-column: 1/5;
+  grid-row: 5/7;
+  margin: 20px;
+  padding: 20px;
+}
+.river-adventure-img2 {
+  grid-column: 5/7;
+  grid-row: 5/7;
+  margin: 20px;
+}
+.river-sub-headline-3 {
+  grid-column: 1/5;
+  grid-row: 8;
+  margin: 10px 0px -20px 20px;
+  padding: 10px 10px 0px 20px;
+  color: var(--paragraph-color-on-white);
+}
+.river-paragraph-3 {
+  grid-column: 1/5;
+  grid-row: 9/10;
+  margin: 0px 20px 20px 20px;
+  padding: 20px;
+}
+.river-adventure-img3 {
+  grid-column: 5/7;
+  grid-row: 9/10;
+  margin: 20px;
+}
+.river-water-img2 {
+  grid-column: 1/3;
+  grid-row: 6/7;
+  margin: 20px;
+}
+.river-paragraph-4 {
+  grid-column: 1/8;
+  grid-row: 10/11;
+  text-align: center;
+  margin: 5px;
+}
+.river-footer {
+  
+}
+
+/* FAQ CSS This content is not used on this site. */
+.faq-sub-headline-1 {
+  grid-column: 1/8;
+  grid-row: 2;
+  margin: 20px 20px 0px 20px;
+  padding: 0px;
+  color: var(--paragraph-color-on-white);
+}
+.faq-paragraph-1 {
+  grid-column: 1/8;
+  grid-row: 3;
+  margin: 0px 20px 10px 20px;
+  padding: 0px;
+}
+.faq-sub-headline-2 {
+  grid-column: 1/8;
+  grid-row: 4;
+  margin: 20px 20px 0px 20px;
+  padding: 0px;
+  color: var(--paragraph-color-on-white);
+}
+.faq-paragraph-2 {
+  grid-column: 1/8;
+  grid-row: 5;
+  margin: 0px 20px 10px 20px;
+  padding: 0px;
+}
+.faq-sub-headline-3 {
+  grid-column: 1/8;
+  grid-row: 6;
+  margin: 20px 20px 0px 20px;
+  padding: 0px;
+  color: var(--paragraph-color-on-white);
+}
+.faq-paragraph-3 {
+  grid-column: 1/8;
+  grid-row: 7;
+  margin: 0px 20px 10px 20px;
+  padding: 0px;
+}
+.faq-sub-headline-4 {
+  grid-column: 1/8;
+  grid-row: 8;
+  margin: 20px 20px 0px 20px;
+  padding: 0px;
+  color: var(--paragraph-color-on-white);
+}
+.faq-paragraph-4 {
+  grid-column: 1/8;
+  grid-row: 9;
+  margin: 0px 20px 10px 20px;
+  padding: 0px;
+}
+.faq-sub-headline-5 {
+  grid-column: 1/8;
+  grid-row: 10;
+  margin: 20px 20px 0px 20px;
+  padding: 0px;
+  color: var(--paragraph-color-on-white);
+}
+.faq-paragraph-5 {
+  grid-column: 1/8;
+  grid-row: 11;
+  margin: 0px 20px 10px 20px;
+  padding: 0px;
+}
+.faq-sub-headline-6 {
+  grid-column: 1/8;
+  grid-row: 12;
+  margin: 20px 20px 0px 20px;
+  padding: 0px;
+  color: var(--paragraph-color-on-white);
+}
+.faq-paragraph-6 {
+  grid-column: 1/8;
+  grid-row: 13;
+  margin: 0px 20px 10px 20px;
+  padding: 0px;
+}
+.faq-footer-paragraph {
+  grid-column: 1/8;
+  grid-row: 14/15;
+  text-align: center;
+  margin: 5px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  /* beginning of media query */
+  .home-grid, .banner-box, img, #mainForm {
+    display: block;
+  }
+  img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .action {
+    font-size: .8em;
+  }
+  .bb-header {
+    font-size: 1.4em;
+  }
+  .banner-box {
+    margin: auto;
+  }
+  .table, .nav-center {
+    padding: 0px;
+    margin: 20px;
+  }
+  #aboutMe-img, #animated {
+    display: none;
+  }
+  #about-p1 {
+  grid-column: 1/4;
+  grid-row: 2;
+  }
+  #about-p2 {
+  grid-column: 1/4;
+  }
+  #about-p3 {
+  grid-column: 1/4;
+  }
+  nav ul {
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+  }
+  nav a:hover {
+    background-color: inherit;
+    text-decoration: none;
+  }
+  #mediaCall {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 80%;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+  }
+  #form-p {
+    padding-bottom: 20px;
+  }
+  button {
+    margin: 0 auto;
+  }
+}
