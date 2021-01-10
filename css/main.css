@@ -68,19 +68,19 @@ div {
 }
 nav a {
   color: var(--headline-color-on-white);
-  text-align: center;
+  text-align: left;
   padding: .5em;
   font-size: 1.1em;
-  text-decoration: none;
+  text-decoration: underline;
 }
 nav ul {
-  margin: auto;
+  margin: 0 auto;
   list-style: none;
 }
-nav a:hover {
+/* nav a:hover {
   background-color: var(--accent2-color);
   border-radius: 5px;
-}
+}*/
 main {
   margin: 0 auto;
   padding: 0px 5px 0px 5px;
@@ -88,7 +88,7 @@ main {
   background-color: var(--accent3-color);
 }
 li {
-  min-width: 120px;
+  min-width: 250px;
 }
 
 /* Classes */
@@ -108,11 +108,12 @@ li {
 }
 #aboutMeImg {
     max-width: 200px;
+    float: right;
     /* display: block; */
     width: 95%;
     margin: 10px;
     grid-column: 4/5;
-    grid-row: 1/2;
+    grid-row: 2/2;
 }
 #main-footer {
   grid-column: 1/6;
