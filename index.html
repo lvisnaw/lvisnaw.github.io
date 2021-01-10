@@ -5,70 +5,52 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script src="js/scripts.js"></script>
   </head>
 
   <body>
-    <div id="content">
-      <header>
+    <div class="content">
+      <header id="mainHeader">
+
         <!-- Web page header section -->
-          <h1>Leon Visnaw</h1>
-        <!--Image of self-->
-        <div class="self-img">
-          <a href="#"><img id="aboutMe-img" src="images/Leon_Visnaw.jpg" alt="Leon Visnaw" /></a>
-        </div>
-        <!--End Image of self-->
-        <nav>
-          <div class="table">
-            <div class="nav-center">
-              <ul>
-                <li>Lesson 02:<a href="#">Assignment Link</a></li>
-                <li>Lesson 03:<a href="#">Assignment Link</a></li>
-                <li>Lesson 04:<a href="#">Link</a> | <a href="#">Link</a></li>
-                <!--<li><a href="form.html">Contact Me</a></li>-->
-                <!--<li><a href="examples.html">Examples</a></li>-->
-                <!--<li><a href="wireframe.html">Wireframe</a></li>-->
-              </ul>
-            </div>
-          </div>
-        </nav>
+
+          <h1 id="fullName">Leon Visnaw</h1>
+
+        <!-- End page header section-->  
+
+        
+
       </header>
 
       <main>
-        
+        <!--Image of self-->
+        <img id="aboutMeImg" src="images/Leon_Visnaw.jpg" alt="Leon Visnaw" />
+        <!--End Image of self-->
 
-          <article id="home-quote1">
-            <!--The goal here is to have a rotating quote using JAVAscript
-            <h4>
-              Inspiration through words
-            </h4>
-            <blockquote>
-              “Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers
-            </blockquote>-->
-          </article>
+      </main>      
+
+      <nav>
+        <span id="classPortal">WDD230 Assignment Portal</span>
+        <hr />
+        <div class="table">
+          <div class="nav-center">
+            <ul>
+              <li>Lesson 02:<a href="#">Assignment Link</a></li>
+              <li>Lesson 03:<a href="#">Assignment Link</a></li>
+              <li>Lesson 04:<a href="#">Link</a> | <a href="#">Link</a></li>
+            </ul>
+          </div>
         </div>
-      </main>
+      </nav>     
 
-      
-
-      <footer class="main-footer">
+      <footer id="main-footer">
         <p class="p-footer">
-          Copyright &copy; | Leon Visnaw | Utha | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+          Copyright &copy; | Leon Visnaw | Utah | <a href="https://www.byui.edu/online" id="linkColor">BYUI Online Learning</a>
           <script>
             document.write(new Date().getFullYear());
           </script>
-          Last Updated: ????<br />
-          <!--Hiding Content for now<br />
-          WDD 230<br />
-          <a href="site-plan.html">Site Plan</a>-->
+          Last Updated: <div id="currentDate"></div><br />
         </p>
-        <!--Social Links
-        <div class="social">
-          <a href="https://www.linkedin.com/in/leonvisnaw/" target="_blank"><img src="https://cdn.glitch.com/5b2a5f20-3512-4164-a9fe-c03fe5d981a7%2Flinkedin.png?v=1602212811032" alt="LinkedIn Icon" class="icon-img" /></a>
-          <a href="https://www.facebook.com/visnaw" target="_blank"><img src="https://cdn.glitch.com/5b2a5f20-3512-4164-a9fe-c03fe5d981a7%2Ffacebook.png?v=1602210887078" alt="Facebook Icon" class="icon-img" /></a>
-          <a href="https://twitter.com/lvisnaw" target="_blank"><img src="https://cdn.glitch.com/5b2a5f20-3512-4164-a9fe-c03fe5d981a7%2Ftwitter.png?v=1602210887078" alt="Twitter Icon" class="icon-img" /></a>
-          <a href="https://www.instagram.com/lvisnaw/" target="_blank" ><img src="https://cdn.glitch.com/5b2a5f20-3512-4164-a9fe-c03fe5d981a7%2Finstagram.png?v=1602210786365" alt="Instagram Icon" class="icon-img" /></a>
-        </div>
-        End Social Links-->
       </footer>
     </div>
   </body>
