@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   align-items: center;
   background-color: var(--primary-color);
+  padding: 20px;
 }
 footer {
   align-items: center;
@@ -64,7 +65,7 @@ div {
   margin-left: 20px;
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: repeat(5 , 1fr);
+  grid-template-columns: repeat(3 , 1fr);
 }
 nav a {
   color: var(--headline-color-on-white);
@@ -77,15 +78,12 @@ nav ul {
   margin: 0 auto;
   list-style: none;
 }
-/* nav a:hover {
-  background-color: var(--accent2-color);
-  border-radius: 5px;
-}*/
 main {
   margin: 0 auto;
   padding: 0px 5px 0px 5px;
+  align-items: center;
   border-radius: 5px;
-  background-color: var(--accent3-color);
+  background-color: inherit;
 }
 li {
   min-width: 250px;
@@ -96,32 +94,40 @@ li {
   max-width: 800px;
   margin: auto;  
 }
+.hrDecoration {
+  margin: 10px 20px 10px 40px;
+}
 
 /* ID's */
 #mainHeader {
   grid-column: 1/6;
   grid-row: 1/2;
+  border-radius: 5px;
 }
 #fullName {
-  margin: 10px 50px;
+  /*margin: 10px 50px;*/
+  /*padding: 10px 50px 10px 80px;*/
+  grid-column: 1/4;
   text-align: center;
 }
 #aboutMeImg {
-    max-width: 200px;
-    float: right;
-    /* display: block; */
-    width: 95%;
-    margin: 10px;
-    grid-column: 4/5;
-    grid-row: 2/2;
+  max-width: 200px;
+  float: right;
+  /* display: block; */
+  width: 95%;
+  margin: -90px 20px 10px 10px;
+  grid-column: 4/5;
+  grid-row: 2/2;
 }
 #main-footer {
   grid-column: 1/6;
-  grid-row: 4;
+  grid-row: 3;
+  border-radius: 5px;
 }
 #classPortal {
   font-size: 3vh;
   font-weight: 700;
+  padding: 10px 50px;
 }
 #linkColor{
   color: var(--accent3-color);
