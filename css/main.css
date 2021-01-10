@@ -50,7 +50,9 @@ h1, h2, h3, h4, h5, h6 {
 header {
   align-items: center;
   background-color: var(--primary-color);
-  padding: 20px;
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 footer {
   align-items: center;
@@ -106,9 +108,8 @@ li {
   border-radius: 5px;
 }
 #fullName {
-  /*margin: 10px 50px;*/
-  /*padding: 10px 50px 10px 80px;*/
-  grid-column: 1/4;
+  grid-column: 1/3;
+  font-size: 2.3em;
   text-align: center;
 }
 #aboutMeImg {
@@ -116,7 +117,7 @@ li {
   float: right;
   /* display: block; */
   width: 95%;
-  margin: -90px 20px 10px 10px;
+  margin: -120px 20px 10px 10px;
   grid-column: 4/5;
   grid-row: 2/2;
 }
