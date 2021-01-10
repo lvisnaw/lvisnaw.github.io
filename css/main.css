@@ -29,7 +29,8 @@ body {
   font-family: "Libre", "Baskerville", "Sans";
   background-color: var(--accent3-color);
   color: var(--primary-color);
-  margin: 0em 1em 0em 1em;
+  margin: 0 auto;
+  padding: 20px;
 }
 p {
   color: var(--primary-color);
@@ -37,15 +38,24 @@ p {
   padding: 0px 5px 0px 5px;
   font-family: var(--paragraph-font);
   font-size: 1em;
-  margin: 0em 1em 0em 1em;
+  margin: inherit;
 }
-h1, h3, h4, h5, h6 {
+h1 {
   background-color: var(--primary-color);
   color: #eef7fb;
   padding: 5px 5px 5px 1rem; /* Can you mix values, is this against best practices? */
   border-radius: 4px;
   font-family: var(--heading-font);
   font-size: 3vh;
+}
+h2, h3, h4, h5, h6 {
+  background-color: inherit;
+  color: inherit;
+  /*padding: 5px 5px 5px 1rem;*/
+  border-radius: 4px;
+  font-family: var(--heading-font);
+  font-size: 14px;
+  margin: inherit;
 }
 header {
   align-items: center;
@@ -60,8 +70,9 @@ footer {
 }
 img {
   max-width: 100%;
-  padding: 5px 0px 5px 0px;
-  /*box-shadow: 10px 1px 10px 1px grey;*/
+  /*padding: 5px 0px 5px 0px;*/
+  border: 1px solid grey;
+  box-shadow: 5px 5px 5px 1px gray;
   border-radius: 15px;
 }
 div {
@@ -89,16 +100,20 @@ main {
   background-color: inherit;
 }
 li {
+  max-width: 350px;
   min-width: 250px;
 }
 
 /* Classes */
 .content {
   max-width: 800px;
-  margin: auto;  
+  margin: 0 auto;  
 }
 .hrDecoration {
   margin: 10px 20px 10px 40px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  grid-column: 1/4;
 }
 
 /* ID's */
@@ -115,11 +130,14 @@ li {
 #aboutMeImg {
   max-width: 200px;
   float: right;
-  /* display: block; */
+  display: block;
   width: 95%;
   margin: -120px 20px 10px 10px;
   grid-column: 4/5;
   grid-row: 2/2;
+}
+#linkNav {
+  grid-column: 1/4;
 }
 #main-footer {
   grid-column: 1/6;
@@ -127,9 +145,9 @@ li {
   border-radius: 5px;
 }
 #classPortal {
-  font-size: 3vh;
+  font-size: inherit;
   font-weight: 700;
-  padding: 10px 50px;
+  padding: 10px 10px 0 50px;
 }
 #linkColor{
   color: var(--accent3-color);
@@ -137,9 +155,10 @@ li {
 .p-footer {
   color: #eef7fb;
   margin: 20px;
-  padding: 5px; /* Can you mix values, is this against best practices? */
+  padding: 5px;
   font-family: var(--heading-font);
   font-size: 2vh;
+  line-height: 3vh;
   text-align: center;
 }
 #content {
@@ -166,7 +185,7 @@ li {
     padding: 0px;
     margin: 20px;
   }
-  #aboutMe-img, #animated {
+  #aboutMeImg, #animated {
     display: none;
   }
   #about-p1 {
