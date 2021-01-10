@@ -39,7 +39,7 @@ p {
   font-size: 1em;
   margin: 0em 1em 0em 1em;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   background-color: var(--primary-color);
   color: #eef7fb;
   padding: 5px 5px 5px 1rem; /* Can you mix values, is this against best practices? */
