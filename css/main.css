@@ -42,7 +42,7 @@ p {
 }
 h1 {
   background-color: var(--primary-color);
-  color: #eef7fb;
+  color: var(--paragraph-color-on-color);
   padding: 5px 5px 5px 1rem; /* Can you mix values, is this against best practices? */
   border-radius: 4px;
   font-family: var(--heading-font);
@@ -71,9 +71,8 @@ footer {
 img {
   max-width: 100%;
   /*padding: 5px 0px 5px 0px;*/
-  border: 1px solid grey;
-  box-shadow: 0 10px 10px -5px gray;
-  border-radius: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
 }
 div {
   margin-left: 20px;
@@ -115,6 +114,21 @@ li {
   border-radius: 5px;
   grid-column: 1/4;
 }
+.shadows {
+  box-shadow: 0 10px 10px -5px;
+}
+.linkColor {
+  color: var(--accent3-color);
+}
+.p-footer {
+  color: #eef7fb;
+  margin: 20px;
+  padding: 5px;
+  font-family: var(--heading-font);
+  font-size: 2vh;
+  line-height: 3vh;
+  text-align: center;
+}
 
 /* ID's */
 #mainHeader {
@@ -148,18 +162,6 @@ li {
   font-size: inherit;
   font-weight: 700;
   padding: 10px 10px 0 50px;
-}
-#linkColor{
-  color: var(--accent3-color);
-}
-.p-footer {
-  color: #eef7fb;
-  margin: 20px;
-  padding: 5px;
-  font-family: var(--heading-font);
-  font-size: 2vh;
-  line-height: 3vh;
-  text-align: center;
 }
 #content {
   max-width: 960px;
@@ -228,3 +230,9 @@ li {
     margin: 0 auto;
   }
 }
+
+/* @media screen and (max-width: 600px) {
+  #aboutMeImg, #animated {
+    display: none;
+  }
+}*/
