@@ -1,6 +1,3 @@
-/* Web safe fonts from Google */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap');
-
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #060211;
@@ -24,9 +21,10 @@
   --nav-hover-link-color: #E7C24F;
   --nav-hover-background-color: #396E94;
 }
-
+/* Web safe fonts from Google */
 body {
-  font-family: "Libre", "Baskerville", "Sans";
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--accent3-color);
   color: var(--primary-color);
   margin: 0 auto;
