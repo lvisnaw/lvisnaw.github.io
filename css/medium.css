@@ -3,7 +3,7 @@
       font-size: 2.3em;
     }
     h2, h3, h4, h5, h6 {
-      font-size: 1.3em;
+      font-size: 1.5em;
     }
     p {
       padding: 0px 5px 0px 5px;
@@ -35,7 +35,7 @@
     }
     .p-footer {
       font-size: .9em;
-    }  
+    }
 }
 
 @media screen and (max-width: 500px) {
