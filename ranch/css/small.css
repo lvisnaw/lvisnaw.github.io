@@ -8,21 +8,23 @@ body {
 
 /* header rules here */
 header {
-    background-color: #17a8e4;
+    background-color: #7f5338;
     padding: 1rem 2%;
 }
 header h1 {
     margin: 0;
+    color: cornsilk;
 }
 header h2 {
     margin: 0;
+    color: cornsilk;
 }
 
 /* navigation rules here */
-nav {background-color: #111;}
+nav {background-color: #997762;}
 nav ul {margin: 0; padding: 0;}
 nav li {list-style-type: none;}
-nav li.active {background-color: #333;}
+nav li.active {background-color: #7f4138;}
 nav a { 
     display: block;
     padding: .8rem 0; /* 44 min height */
@@ -37,7 +39,7 @@ main {
     padding: 1rem 2%;
     display: block;
 }
-main h1 {color: #17a8e4;}
+main h1 {color: #7f5338;}
 main figure img {width: 100%;}
 main figure {
     width: 100%;
@@ -48,7 +50,7 @@ main figcaption {text-align: center; font-size: .8rem;}
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #17a8e4;
+    background-color: #385a7f;
 }
 
 
