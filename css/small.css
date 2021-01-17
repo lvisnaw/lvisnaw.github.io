@@ -103,10 +103,6 @@ main {
   border-radius: 5px;
   background-color: inherit;
 }
-li {
-  max-width: 350px;
-  min-width: 250px;
-}
 
 /* Classes */
 .content {
