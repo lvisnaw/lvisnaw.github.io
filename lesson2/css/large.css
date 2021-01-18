@@ -13,7 +13,7 @@ header, footer, nav, main, body {max-width: 75rem; margin: auto;}
         grid-column: 1/4;
         grid-row: 1;
     }
-
+    
 
 
 } /* end media query*/

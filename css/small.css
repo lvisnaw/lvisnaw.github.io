@@ -93,7 +93,6 @@ main {
   padding: 1rem 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
 }
 main section {
   margin: 1rem 2%;
@@ -140,10 +139,9 @@ main section {
   text-align: center;
 }
 #aboutMeImg {
-  max-width: 200px;
+  width: 100%;
   margin: 25px;
-  float: right;
-  grid-column: 3;
+  grid-column: 3/5;
   grid-row: 1/3;
 }
 
