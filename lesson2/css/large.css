@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 980px) {
 header, footer, nav, main, body {max-width: 75rem; margin: auto;}
 
     nav ul {padding-left: 2%;}
