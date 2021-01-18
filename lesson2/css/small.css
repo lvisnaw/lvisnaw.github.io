@@ -9,8 +9,10 @@ body {
 
 /* header rules here */
 header {
-    background-color: #7f5338;
+    background-color: #261e6d;
     padding: 1rem 2%;
+    grid-column: 1/4;
+    grid-row: 1;
 }
 header h1 {
     margin: 0;
@@ -38,10 +40,14 @@ nav a:hover {background-color: #444;}
 /* main rule here */
 main {
     padding: 1rem 2%;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-main h1 {color: #7f5338;}
-main figure img {width: 100%;}
+main h1 {color: #261e6d;}
+main figure img {
+    width: 100%; 
+    align-content: center;
+}
 main figure {
     width: 100%;
     margin: 0;
@@ -52,10 +58,30 @@ footer {
     text-align: center;
     color: #eef7fb;
     padding: 1rem 2%;
-    background-color: #385a7f;
+    background-color: #261e6d;
+    grid-column: 1/4;
+    grid-row: 3;
 }
 footer a {
     color: #eef7fb;
+}
+section h2, h3 {
+    text-align: center;
+}
+section p {
+    padding: 10px;
+}
+main section.first {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+main section.second {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+main section.third {
+    grid-column: 3/4;
+    grid-row: 2;
 }
 
 

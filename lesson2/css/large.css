@@ -1,14 +1,17 @@
 @media only screen and (min-width: 1028px) {
-header, footer, nav, main {max-width: 75rem; margin: auto;}
+header, footer, nav, main, body {max-width: 75rem; margin: auto;}
 
     nav ul {padding-left: 2%;}
     nav li {width: auto;}
     nav a {padding: .5rem 1rem;}
 
     main figure {width: 90%;}
-
-    div.news {
-        column-count: 3;
+    
+    header {
+        background-color: #261e6d;
+        padding: 1rem 2%;
+        grid-column: 1/4;
+        grid-row: 1;
     }
 
 
