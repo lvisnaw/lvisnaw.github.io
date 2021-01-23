@@ -1,0 +1,81 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* Collor Pallet https://coolors.co/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5 */
+:root {
+--primary-color: #2C7DA0;
+--secondary-color: #61A5C2;
+--accent1-color: #012A4A;
+--accent2-color: #A9D6E5;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+h1, h2, p {color: var(--accent1-color);}
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: var(--primary-color);
+}
+header img {float: left; margin-right: 10px; width: 50px;}
+header h1 {margin: 0; font-size: 1.3rem; }
+header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: var(--secondary-color);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+nav ul li.active a {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--accent2-color);
+    padding: 1rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
