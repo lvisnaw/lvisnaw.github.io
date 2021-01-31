@@ -1,0 +1,34 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 65rem) {
+
+    header, nav, main, footer {
+        margin: auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav button {display: none;}
+    
+nav ul.hide {display: block;}
+
+/*----------- MAIN --------------*/
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed var(--secondary-color);
+    padding: 15px;
+    background-color: rgba(169, 214, 229, 1);    
+}
+
+
+/*----------- FOOTER --------------*/
+
+    
+} /* end of media query */

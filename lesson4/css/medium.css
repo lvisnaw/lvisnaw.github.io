@@ -1,0 +1,50 @@
+/* 40em is also 640px (if basefont is 16px) */
+@media only screen and (min-width: 40rem) {
+
+
+/*----------- BODY --------------*/
+
+    
+
+/*----------- HEADER --------------*/
+    header section {
+        padding: .2rem 2%;
+        max-width: 64rem;        
+    }
+    header img {width: auto;}
+    header h1 {font-size: 2rem;}
+    header h2 {font-size: 1.5rem;}
+
+/*----------- NAVIGATION --------------*/
+    nav div {
+        align-content: center;
+        max-width: 64rem;}
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2%;}
+    nav ul li {float: left;}
+
+    nav ul li a{padding: .5rem 1rem;}
+    nav button {display: none;}
+    
+    nav ul.hide {display: block;}
+
+/*----------- MAIN --------------*/
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed var(--secondary-color);
+    padding: 15px;
+    background-color: rgba(169, 214, 229, 0.6);    
+}
+    main { max-width: 60rem;}
+
+
+/*----------- FOOTER --------------*/
+    footer {
+        align-content: center;
+        max-width: 64rem;
+    }
+    
+} /* end of media query */
