@@ -26,7 +26,19 @@ nav ul.hide {display: block;}
     padding: 15px;
     background-color: rgba(169, 214, 229, 1);    
 }
-
+    .placeHolder {
+        border: 1px solid var(--secondary-color);
+        width: 300px;
+        height: 250px;
+        padding: 10px;
+        position: absolute;
+        top: 250px;
+        background-color: #f7fff7;
+    }
+    .fiveDayImgPlaceHolder {
+        background-color: rgba(169, 214, 229, 0.6);
+        padding: 1rem 1rem 1rem 1rem;
+    }
 
 /*----------- FOOTER --------------*/
 
