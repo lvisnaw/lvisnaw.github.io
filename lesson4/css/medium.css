@@ -51,7 +51,7 @@
         padding: 10px;
         position: absolute;
         top: 250px;
-        background-color: #f7fff7;
+        background-color: rgba(169, 214, 229, 0.6);
         left: 20%;
     }
     .fiveDayImgPlaceHolder {
