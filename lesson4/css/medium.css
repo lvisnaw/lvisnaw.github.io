@@ -38,11 +38,15 @@
         padding: 15px;
         background-color: rgba(169, 214, 229, 0.6);    
     }
-    main {max-width: 60rem;}
+    main {
+        padding: .2rem 2%;
+        max-width: 60rem;
+        
+    }
     main img {
         width: 100%;
         height: 400px;
-        padding: 10px 0;
+        padding: 1rem 1%;
     }
     .placeHolder {
         border: 1px solid var(--secondary-color);
@@ -55,18 +59,20 @@
         left: 20%;
     }
     .fiveDayImgPlaceHolder {
+        display: flex;
+        justify-content: center;
         background-color: rgba(169, 214, 229, 0.6);
         padding: 1rem 1rem 1rem 1rem;
     }
-    .visible img {
-        display: inline;
+    main div .visible img {
+        display: inline-flex;
+        justify-content: space-around;
+        align-content: center;
     }
     
     .fiveDayImg {
-        display: flex;
-        justify-content: space-around;
-        width: 100px;
-        height: 100px;
+        width: 18%;
+        height: auto;
     }
     article {
         border: 1px solid var(--secondary-color);
