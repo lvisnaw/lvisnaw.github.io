@@ -7,6 +7,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 --secondary-color: #61A5C2;
 --accent1-color: #012A4A;
 --accent2-color: #A9D6E5;
+
+/* change the values below to your chosen font(s) */
+--heading-font: 'Libre Baskerville', serif;
+--paragraph-font: 'Open Sans', sans-serif;    
+    
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -17,9 +22,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: var(--paragraph-font);
 }
-h1, h2, h3, h4, h5, h6, p, div {color: var(--accent1-color);}
+h1, h2, h3, h4, h5, h6, p, div {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
 
 /*----------- HEADER --------------*/
 header {
