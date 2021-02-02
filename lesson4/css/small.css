@@ -58,7 +58,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: var(--accent1-color);
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
