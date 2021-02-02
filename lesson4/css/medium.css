@@ -111,7 +111,7 @@
     #ftContact {
         grid-column: 4;
         line-height: 1.5rem;
-        text-align: justify;
+        text-align: left;
         padding: 0 2%;
         margin: 0 2rem;
     }
