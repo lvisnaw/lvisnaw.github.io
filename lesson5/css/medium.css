@@ -91,7 +91,7 @@
         text-align: center;
         border: 1px solid var(--accent1-color);
     }
-    section.fiveDayImgPlaceHolder div h5 {
+    section.fiveDayImgPlaceHolder div h4 {
         background-color: var(--secondary-color);
         margin: 0;
         padding: 1rem;
