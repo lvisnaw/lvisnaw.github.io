@@ -156,7 +156,9 @@ footer p {
 #classData {
     margin: 2rem 2%;
 }
-
+.material-icons.s15 {
+    font-size: 15px;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
