@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="WDD230-07 Portal Assignment Lesson 4 Page - Web Frontend Development at Brigham Young University - Idaho">
+<meta name="author" content="Leon Visnaw">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Weather Zens</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- Message Center -->
+    <section class="msgCenter">
+        <div id="message">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    </section>
+<!-- HEADER HERE -->
+	<header class="clearfix">
+        <section class="center">
+            <img src="images/weatherzens.gif" alt="Weather Zens Logo" />
+            <h1 class="center">Weather Zens</h1>
+            <h2 class="center">Where You Come To Get Your <em>ZEN</em> On</h2>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <div class="center">
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="center">
+        <h2>Preston Idaho</h2>
+        <div class="mainHero clearfix">
+            <div class="mainImg">
+                <img src="images/town.jpg" id="heroImg" alt="Preston Idaho Hero" />
+            </div>                
+            <section class="placeHolder clearfix">
+                <h3>Weather Summary</h3>
+                <hr>
+                <table class="smCenter">
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>High:</td>
+                            <td>32 <sup>o</sup>F</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td>2 mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="clearfix">
+            <div class="fiveDayForcast">
+                <h3>5-Day Forcast</h3>
+                <section class="fiveDayImgPlaceHolder visible center">
+                    <div>
+                        <h5>Wednesday</h5>
+                        <img src="images/sun-snow.png" class="fiveDayImg" alt="Day 1 Forcast" />
+                        <p>36&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Tuesday</h5>
+                        <img src="images/snow.png" class="fiveDayImg" alt="Day 1 Forcast" />
+                        <p>32&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Friday</h5>
+                        <img src="images/sun-snow.png" class="fiveDayImg" alt="Day 1 Forcast" />
+                        <p>37&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Saturday</h5>
+                        <img src="images/sun-cloud.png" class="fiveDayImg" alt="Day 1 Forcast" />
+                        <p>42&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Sunday</h5>
+                        <img src="images/sun.png" class="fiveDayImg" alt="Day 1 Forcast" />
+                        <p>48&deg;</p>
+                    </div>
+                </section>
+            </div>
+            <article>
+                <img src="images/snow-fun.jpg" id="articleImage" alt="Weather Summary Hero" />
+                <h3>Winter Friendly Dog Parks!</h3>
+                <p>Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.&nbsp;</p>
+                <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.&nbsp;</p>
+            </article>
+        </div>
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer class="center">
+        <div id="ftMapContact">
+            <div id="ftMap">
+                <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282657175!2d-111.91534447268731!3d42.099805311875485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612654498348!5m2!1sen!2sus" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div id="ftContact">
+                <h4>Contact Information</h4>
+                <p><i class="material-icons" style="font-size: 15px;">place</i>&nbsp;355 N Nirvana Way<br>
+                &#9993;&nbsp;info@weatherzens.com<br>
+                &#9743;&nbsp;1-800-876-3099</p>
+                <img src="images/facebook.png" alt="Facebook" class="social" />
+                <img src="images/twitter.png" alt="Twitter" class="social" />
+                <img src="images/instagram.png" alt="Instagram" class="social" />
+            </div>
+        </div>
+        <div id="classData">
+            <p>&copy; <span id="currentYear"></span> | Leon Visnaw | Utah | <a href="https://www.byui.edu/online" class="linkColor" target="_blank">BYUI Online Learning</a><br>
+            Last Updated: <span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <p>&nbsp;</p>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
