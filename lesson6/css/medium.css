@@ -111,8 +111,8 @@
         padding: 0 1%;
     }
     article img {
-        width: 30%;
-        height: 30%;
+        width: 25%;
+        height: auto;
         float: right;
         padding: 1rem 25px 1rem 1rem;
     }
