@@ -1,8 +1,1 @@
-
-WebFont.load({
-    google: {
-      families: [
-        "Libre Baskerville"
-      ]
-    }
-  });
+WebFont.load({google: {families: ["Libre Baskerville", "Open+Sans"]}});
