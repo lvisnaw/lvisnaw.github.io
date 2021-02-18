@@ -65,12 +65,12 @@
     <main class="center">
         <h2>Preston Idaho</h2>
         <div class="mainHero clearfix">
-            <div class="mainImg">
-                <img src="images/wdd230_image_franklinOriginal-400.jpg" id="heroImg" alt="Preston Idaho Hero" sizes="100vw"
-                     srcset="images/wdd230_image_franklinOriginal-400.jpg 400w,
-                             images/wdd230_image_franklinOriginal-600.jpg 600w,
-                             images/wdd230_image_franklinOriginal-1200.jpg 800w"/>
-            </div>                
+            <picture class="mainImg">
+                <source media="(max-width: 400px)" srcset="images/wdd230_image_franklinOriginal-400.jpg">
+                <source media="(max-width: 600px)" srcset="images/wdd230_image_franklinOriginal-600.jpg">
+                <source media="(max-width: 1200px)" srcset="images/wdd230_image_franklinOriginal-1200.jpg">
+                <img src="images/wdd230_image_franklinOriginal-1200.jpg" id="heroImg" alt="Preston Idaho Hero" />
+            </picture>                
             <section class="placeHolder clearfix">
                 <h3>Weather Summary</h3>
                 <hr>
