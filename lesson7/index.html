@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="WDD230-07 Portal Assignment Lesson 7 Lazy Load - Web Frontend Development at Brigham Young University - Idaho">
+<meta name="author" content="Leon Visnaw">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Lazy Load</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/lazload.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Message Center -->
+    
+<!-- HEADER HERE -->
+	<header class="clearfix center">
+        <h1 class="center">Lazy Load</h1>
+    </header>    
+    
+<!-- NAVIGATION HERE -->    
+    
+<!-- CONTENT HERE -->
+    <main class="center">
+        <picture>
+            <img src="images/img-place-holder.png" data-src="images/lzyld1.jpg" id="heroImg" alt="Lazy Load 1" width="300" height="400" />
+        </picture>
+        <picture>
+            <img src="images/img-place-holder.png" data-src="images/lzyld2.jpg" id="heroImg" alt="Lazy Load 2" width="300" height="400" />
+        </picture>
+        <picture>
+            <img src="images/img-place-holder.png" data-src="images/lzyld3.jpg" id="heroImg" alt="Lazy Load 3" width="300" height="400" />
+        </picture>
+        <picture>
+            <img src="images/img-place-holder.png" data-src="images/lzyld4.jpg" id="heroImg" alt="Lazy Load 4" width="300" height="400" />
+        </picture>
+        <picture>
+            <img src="images/img-place-holder.png" data-src="images/lzyld5.jpg" id="heroImg" alt="Lazy Load 5" width="300" height="400" />
+        </picture>
+        <picture>
+            <img src="images/img-place-holder.png" data-src="images/lzyld6.jpg" id="heroImg" alt="Lazy Load 6" width="300" height="400" />
+        </picture>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer class="center">
+        <div id="classData">
+            <p>&copy; <span id="currentYear"></span> | Leon Visnaw | Utah | <a href="https://www.byui.edu/online" class="linkColor" target="_blank">BYUI Online Learning</a><br>
+            Last Updated: <span id="currentDate"></span></p>
+            <p><a href="/index.html" target="_blank">cooking crumb</a></p>
+        </div>
+    </footer>
+    <p>&nbsp;</p>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/lazy-load.js"></script>
+</body>
+</html>
