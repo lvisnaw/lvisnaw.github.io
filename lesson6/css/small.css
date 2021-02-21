@@ -30,7 +30,8 @@ h1, h2, h3, h4, h5, h6, p, td, tr, div {
     font-family: var(--heading-font);
     color: var(--accent1-color);
 }
-
+a:hover {cursor: pointer;}
+img[data-src] {filter: blur(0.2em);}
 /*----------- HEADER --------------*/
 section#message {
     background-color: orange;
@@ -82,8 +83,6 @@ nav ul li a {
     font-size: .9rem;
     text-align: center;
 }
-
-
 nav ul li a:hover {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
@@ -108,7 +107,11 @@ main img {
 hr {
     border: .07rem solid var(--accent1-color);
 }
-
+main div figcaption {
+    font-size: .8em;
+    padding: 1px 0 20px 0;
+}
+.imgGallery:hover {box-shadow: 0 0 50px #333;}
 .fiveDayForcast {
     display: none;
 }

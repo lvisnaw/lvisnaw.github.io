@@ -48,10 +48,23 @@
     main img {
         width: 100%;
         height: auto;
-        padding: 1rem 1%;
+        /*padding: 1rem 1%;*/
     }
     main div.mainHero {
         max-width: 60rem;
+    }
+    main div.wHero {
+        max-width: 60rem;
+    }
+    main div picture.wImg {
+        display: inline-block;
+        width: 40%;
+        height: auto;
+        padding: 1rem 2%;
+    }
+    main div figcaption {
+        font-size: 10px;
+        padding: 0 0 20px 0;
     }
     .mainHero {
         position: relative;
