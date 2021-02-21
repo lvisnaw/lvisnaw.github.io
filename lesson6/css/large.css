@@ -1,5 +1,5 @@
 /* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 65rem) {
+@media only screen and (min-width: 64rem) {
 
     header, nav, main, footer {
         margin: auto;
@@ -26,10 +26,21 @@ nav ul.hide {display: block;}
     padding: 15px;
     background-color: rgba(169, 214, 229, 1);    
 }
-main div picture.wImg {
+main {
+        padding: .2rem 2%;
+        max-width: 64rem;  
+    }
+main figure {
+        margin: 0 auto;
+    }
+main div figure.wImg {
     display: inline-block;
-    width: 32%;
+    width: 30%;
     height: auto;
+}
+main div.wHeading {
+    text-align: left;
+    margin: 0 .5rem;
 }
 .fiveDayImgPlaceHolder {
    background-color: rgba(169, 214, 229, 0.6);

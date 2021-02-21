@@ -111,6 +111,7 @@ main div figcaption {
     font-size: .8em;
     padding: 1px 0 20px 0;
 }
+main div.wHeading {text-align: center;}
 .imgGallery:hover {box-shadow: 0 0 50px #333;}
 .fiveDayForcast {
     display: none;

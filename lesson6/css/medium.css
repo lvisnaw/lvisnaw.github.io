@@ -42,9 +42,6 @@
         padding: .2rem 2%;
         max-width: 60rem;  
     }
-    main figure {
-        max-width: 60rem;
-    }
     main img {
         width: 100%;
         height: auto;
@@ -53,18 +50,19 @@
     main div.mainHero {
         max-width: 60rem;
     }
-    main div.wHero {
-        max-width: 60rem;
-    }
-    main div picture.wImg {
+    main div figure.wImg {
         display: inline-block;
-        width: 40%;
+        width: 41%;
         height: auto;
-        padding: 1rem 2%;
+        padding: .1rem 1%;
     }
     main div figcaption {
         font-size: 10px;
         padding: 0 0 20px 0;
+    }
+    main div.wHeading {
+        text-align: left;
+        margin: 0 3rem;
     }
     .mainHero {
         position: relative;
