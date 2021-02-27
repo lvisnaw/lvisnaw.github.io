@@ -1,0 +1,176 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* Collor Pallet https://coolors.co/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5 */
+:root {
+--primary-color: #2C7DA0;
+--secondary-color: #61A5C2;
+--accent1-color: #012A4A;
+--accent2-color: #A9D6E5;
+--accent3-color: #89C2D9;
+--accent4-color: #ffffff;
+--accent5-color: #01497C;
+
+/* change the values below to your chosen font(s) */
+--heading-font: 'Libre Baskerville', serif;
+--paragraph-font: 'Open Sans', sans-serif;    
+    
+}
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Open Sans', sans-serif; */
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.center {margin: 0 auto;}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+}
+h1, h2, h3, h4, h5, h6, p, td, tr, div {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+a:hover {cursor: pointer;}
+img[data-src] {filter: blur(0.2em);}
+/*----------- HEADER --------------*/
+section#message {
+    background-color: orange;
+    padding: 1rem 2%;
+}
+section.showme {
+    display: block;
+}
+section.hideme {
+    display: none;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: var(--primary-color);
+}
+header img {
+    float: left; 
+    margin-right: 10px; 
+    width: 15%; 
+    height: 15%;
+}
+header h1 {margin: 0; font-size: 1.2rem; }
+header h2 {margin: 0; font-weight: normal; font-size: .7rem;}
+header div {margin: 0; font-weight: normal; font-size: 1rem;}
+
+/*----------- NAVIGATION --------------*/
+nav button {
+    margin: .2rem 2%;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    border: none;
+    font-size: 1.6rem;
+}
+nav {
+    background-color: var(--secondary-color);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--accent1-color);
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+nav ul li.active a {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+nav ul.hide {display: none;}
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+main img {
+    width: 100%;
+    height: auto;
+}
+hr {
+    border: .07rem solid var(--accent1-color);
+}
+main div figcaption {
+    font-size: .8em;
+    padding: 1px 0 20px 0;
+}
+main div.wHeading {text-align: center;}
+.imgGallery:hover {box-shadow: 0 0 50px #333;}
+.fiveDayForcast {
+    display: none;
+}
+.placeHolder {
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(169, 214, 229, 0.9);
+}
+.placeHolder td{
+    text-align: right;
+    padding: 2px 10px 2px 10px;
+}
+.smCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed var(--secondary-color);
+    padding: 15px;
+    background-color: rgba(169, 214, 229, 0.3);    
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--accent2-color);
+    padding: 1rem 2%;
+    text-align: center;
+}
+footer img {
+    width: 100%;
+    height: 150px;
+}
+footer p {
+    margin: 0 0 15px 0;
+}
+#placeIcons {
+    font-size:5px;
+    color: var(--accent2-color);
+}
+.social {
+    width: 40px;
+    height: auto;
+}
+#classData {
+    margin: 2rem 2%;
+}
+.material-icons.s15 {
+    font-size: 15px;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

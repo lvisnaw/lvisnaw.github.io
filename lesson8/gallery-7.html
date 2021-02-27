@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="WDD230-07 Portal Assignment Lesson 4 Page - Web Frontend Development at Brigham Young University - Idaho">
+<meta name="author" content="Leon Visnaw">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Weather Zens</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap" rel="stylesheet">-->
+<link rel="shortcut icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- Message Center -->
+    <section class="msgCenter" id="message">
+        <h4>This Saturday</h4>
+        <p>Preston Pancakes in the Park! 9:00 A.M. at the city park pavilion.</p>
+        <p>Come and enjoy good food and fun. See you there.</p>
+    </section>
+<!-- HEADER HERE -->
+	<header class="clearfix">
+        <section class="center">
+            <img src="images/weatherzens.gif" alt="Weather Zens Logo" />
+            <h1 class="center">Weather Zens</h1>
+            <h2 class="center">Where You Come To Get Your <em>ZEN</em> On</h2>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <div class="center">
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="center">
+        <div class="wHeading">
+            <h2>Weather Gallery</h2>
+        </div>
+        <div class="wHero clearfix">
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/landscape-nature-oilseed-rape-field-3369304/" target="_blank"><img src="images/img-place-holder.png" data-src="images/landscape-3369304_1920.jpg" class="imgGallery" alt="Landscape" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/ritae-19628/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3369304" target="_blank">RitaE</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3369304" target="_blank">Pixabay</a></figcaption>
+            </figure>  
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/lago-di-limides-dolomites-alpine-3025780/" target="_blank"><img src="images/img-place-holder.png" data-src="images/lago-di-limides-3025780_1920.jpg" class="imgGallery" alt="Lago Di Limides" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/julius_silver-4371822/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3025780" target="_blank">Julius Silver</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3025780" target="_blank">Pixabay</a></figcaption>
+            </figure>
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/sky-clouds-sunlight-dark-690293/" target="_blank"><img src="images/img-place-holder.png" data-src="images/sky-690293_1920.jpg" class="imgGallery" alt="Cloudy Sky" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=690293" target="_blank">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=690293" target="_blank">Pixabay</a></figcaption>
+            </figure>
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/sun-dawn-nature-bright-light-3130638/" target="_blank"><img src="images/img-place-holder.png" data-src="images/sun-3130638_1920.jpg" class="imgGallery" alt="Sun Burst in the Woods" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/marys_fotos-7921624/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3130638" target="_blank">Marion Wellmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3130638" target="_blank">Pixabay</a></figcaption>
+            </figure>
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/tree-weather-clouds-hill-mood-4306636/" target="_blank"><img src="images/img-place-holder.png" data-src="images/tree-4306636_1920.jpg" class="imgGallery" alt="Tree on a hill" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4306636" target="_blank">jplenio</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4306636" target="_blank">Pixabay</a></figcaption>
+            </figure>
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/snowman-winter-snowmen-holiday-640366/" target="_blank"><img src="images/img-place-holder.png" data-src="images/snowman-640366_1920.jpg" class="imgGallery" alt="Snow Family" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/jsnewtonian-783084/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=640366" target="_blank">jsnewtonian</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=640366" target="_blank">Pixabay</a></figcaption>
+            </figure>
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/frozen-berries-red-fruits-white-201495/" target="_blank"><img src="images/img-place-holder.png" data-src="images/frozen-201495_1920.jpg" class="imgGallery" alt="Frozen Berries" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/kristamonique-76979/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=201495" target="_blank">kristamonique</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=201495" target="_blank">Pixabay</a></figcaption>
+            </figure>
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/flash-thunderstorm-super-cell-2568381/" target="_blank"><img src="images/img-place-holder.png" data-src="images/flash-2568381_1920.jpg" class="imgGallery" alt="Lighting Flash" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/felixmittermeier-4397258/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2568381" target="_blank">FelixMittermeier</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2568381" target="_blank">Pixabay</a></figcaption>
+            </figure>
+            <figure class="wImg">
+                <a href="https://pixabay.com/photos/clouds-sunset-fog-mountains-449822/" target="_blank"><img src="images/img-place-holder.png" data-src="images/clouds-449822_1920.jpg" class="imgGallery" alt="Misty Morning" /></a>
+                <figcaption>Image by <a href="https://pixabay.com/users/deltaworks-37465/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=449822" target="_blank">Kohji Asakawa</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=449822" target="_blank">Pixabay</a></figcaption>
+            </figure>
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer class="center">
+        <div id="ftMapContact">
+            <div id="ftMap">
+                <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282657175!2d-111.91534447268731!3d42.099805311875485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612654498348!5m2!1sen!2sus"></iframe>
+            </div>
+            <div id="ftContact">
+                <h4>Contact Information</h4>
+                <p><i class="material-icons s15">place</i>&nbsp;355 N Nirvana Way<br>
+                <i class="material-icons s15">&#xe554;</i>&nbsp;info@weatherzens.com<br>
+                <i class="material-icons s15">&#xe551;</i>&nbsp;1-800-876-3099</p>
+                <img src="images/facebook.png" alt="Facebook" class="social" />
+                <img src="images/twitter.png" alt="Twitter" class="social" />
+                <img src="images/instagram.png" alt="Instagram" class="social" />
+            </div>
+        </div>
+        <div id="classData">
+            <p>&copy; <span id="currentYear"></span> | Leon Visnaw | Utah | <a href="https://www.byui.edu/online" class="linkColor" target="_blank">BYUI Online Learning</a><br>
+            Last Updated: <span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <p>&nbsp;</p>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/lazy-load.js"></script>
+</body>
+</html>
