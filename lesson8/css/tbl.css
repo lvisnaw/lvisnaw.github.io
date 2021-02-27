@@ -15,6 +15,7 @@ main div table tr.title {
 main div table tr.head td {
     color: var(--accent4-color);
 }
+table {box-shadow: 5px 5px 15px var(--primary-color);}
 table, th, td {
     border: 1px solid var(--accent1-color);
     border-collapse: collapse;
