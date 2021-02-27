@@ -35,6 +35,7 @@ th, td {
 }
 #tbl01 tr:nth-child(6) :last-child {
     background-color: var(--primary-color);
+    color: var(--accent4-color);
 }
 #tbl01 tr:nth-child(2) {
     background-color: var(--accent5-color);
