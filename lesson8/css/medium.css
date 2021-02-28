@@ -68,9 +68,6 @@
     .mainHero {
         position: relative;
     }
-    .mainImg {
-        
-    }
     .placeHolder {
         border: 2px solid var(--secondary-color);
         text-align: center;

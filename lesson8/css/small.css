@@ -161,6 +161,7 @@ form fieldset {
     padding: .5rem 2%;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 80%;
+    padding-bottom: 2rem;
 }
 form legend {
     color: var(--accent1-color);
