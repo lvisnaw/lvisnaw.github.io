@@ -128,6 +128,16 @@
         float: right;
         padding: 1rem 25px 1rem 1rem;
     }
+  
+/*----------- FOOTER --------------*/
+    form label.sliderContainer input.slider {
+    display: block;
+    font-size: 1rem;
+    padding: .3rem;
+    color: #555;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
 
 /*----------- FOOTER --------------*/
     footer {

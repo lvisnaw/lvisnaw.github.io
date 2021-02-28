@@ -194,13 +194,13 @@ form label.sliderContainer {
     color: var(--accent1-color);
     font-size: .8rem;
 }
-form label.sliderContainer input {
+form label.sliderContainer input.slider {
     display: block;
     font-size: 1rem;
     padding: .3rem;
     color: #555;
     width: 100%;
-    max-width: 60rem;
+    max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
 }
 form input.submitBtn {
