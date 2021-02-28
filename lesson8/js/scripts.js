@@ -30,3 +30,7 @@ if (dayNumber == 5) {
 } else {
     element.classList.add("hideme");
 }
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}

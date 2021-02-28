@@ -119,6 +119,16 @@ main div.wHeading {text-align: center;}
 .fiveDayForcast {
     display: none;
 }
+main.thankYou {padding: 2rem;}
+main div.thankYou {
+    border: 2px solid var(--accent1-color);
+    border-radius: 4px;
+    padding: .2rem 2%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+    line-height: 1.5rem;
+}
 .placeHolder {
     border: 2px solid var(--secondary-color);
     text-align: center;
@@ -140,6 +150,76 @@ main div.wHeading {text-align: center;}
     padding: 15px;
     background-color: rgba(169, 214, 229, 0.3);    
 }
+
+/*----------- FORM --------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: var(--accent1-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div, form label.slider {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent1-color);
+    font-size: .8rem;
+}
+form label.top input, form select, form label.top textarea, form label select option {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+form label.sliderContainer {
+    -webkit-appearance: none;
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent1-color);
+    font-size: .8rem;
+}
+form label.sliderContainer input {
+    display: block;
+    font-size: 1rem;
+    padding: .3rem;
+    color: #555;
+    widows: 100%;
+    max-width: 60rem;
+    background-color: rgba(0,0,0,0.1);
+}
+form input.submitBtn {
+    border: none;
+    background-color: var(--accent1-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
 
 /*----------- FOOTER --------------*/
 footer {

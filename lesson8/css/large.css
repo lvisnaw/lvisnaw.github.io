@@ -48,6 +48,11 @@ main div.wHeading {
    padding: 1rem 1rem 1rem 1rem;
 }
 
+/*----------- FORM --------------*/
+form label.sbs {
+    padding: .4rem 0;
+}
+
 /*----------- FOOTER --------------*/
 
     
