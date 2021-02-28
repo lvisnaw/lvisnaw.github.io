@@ -153,11 +153,14 @@ main div.thankYou {
 
 /*----------- FORM --------------*/
 
+main h1.formH1 {padding: .2rem 2%;}
 form fieldset {
     margin: 2rem 0;
     border: 1px solid var(--accent1-color);
     border-radius: 10px;
     padding: .5rem 2%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
 }
 form legend {
     color: var(--accent1-color);
