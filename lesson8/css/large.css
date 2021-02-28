@@ -49,6 +49,9 @@ main div.wHeading {
 }
 
 /*----------- FORM --------------*/
+form fieldset {
+    width: 80%;
+}
 form label.sbs {
     padding: .4rem 0;
 }

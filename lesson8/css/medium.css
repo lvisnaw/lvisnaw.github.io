@@ -125,7 +125,11 @@
         float: right;
         padding: 1rem 25px 1rem 1rem;
     }
-  
+/*----------- Form --------------*/    
+    form fieldset {
+        width: 60%;
+    }
+
 /*----------- FOOTER --------------*/
     form label.sliderContainer input.slider {
     display: block;
