@@ -41,3 +41,6 @@ th, td {
 #tbl01 tr:nth-child(2) {
     background-color: var(--accent5-color);
 }
+#tbl01 tr:nth-child(7) :first-child {
+    font-style: italic;
+}
