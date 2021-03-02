@@ -56,7 +56,7 @@ form label.sbs {
     padding: .4rem 0;
 }
 form label.top input, form select, form label.top textarea, form label select option {
-        max-width: 35rem;
+        max-width: 30rem;
 }
 /*----------- FOOTER --------------*/
 
