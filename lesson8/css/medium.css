@@ -129,6 +129,9 @@
     form fieldset {
         width: 60%;
     }
+    form label.top input, form select, form label.top textarea, form label select option {
+    max-width: 30rem;
+}
 
 /*----------- FOOTER --------------*/
     form label.sliderContainer input.slider {
