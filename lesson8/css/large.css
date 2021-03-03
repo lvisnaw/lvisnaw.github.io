@@ -55,9 +55,10 @@ form fieldset {
 form label.sbs {
     padding: .4rem 0;
 }
-form label.top input, form select, form label.top textarea, form label select option {
+form label.top input, form select, form label.top textarea, form label select option, div#selected {
         max-width: 30rem;
 }
+    
 /*----------- FOOTER --------------*/
 
     

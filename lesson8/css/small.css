@@ -148,7 +148,7 @@ main div.thankYou {
     margin: 10px auto;
     border: 1px dashed var(--secondary-color);
     padding: 15px;
-    background-color: rgba(169, 214, 229, 0.3);    
+    background-color: rgba(255, 153, 153, 0.3);    
 }
 
 /*----------- FORM --------------*/
@@ -223,7 +223,19 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
-
+div#selected {
+    -webkit-appearance: none;
+    display: none;
+    font-size: 1rem;
+    border: solid 1px var(--accent1-color);
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--accent1-color);
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(255, 204, 153,0.4);
+    margin: .5rem 0;
+}
 
 /*----------- FOOTER --------------*/
 footer {

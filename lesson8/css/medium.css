@@ -129,7 +129,7 @@
     form fieldset {
         width: 60%;
     }
-    form label.top input, form select, form label.top textarea, form label select option {
+    form label.top input, form select, form label.top textarea, form label select option, div#selected {
         max-width: 25rem;
     }
 

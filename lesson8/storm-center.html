@@ -100,14 +100,15 @@
                 </datalist>
                 
                 <label class="top">Storm Conditions</label>
-                <select name="datalist" id="stormSeverity">
-                    <option value="Please Select">Please Select &#9662;</option>
+                <select name="stormConditions" id="stormSeverity" onchange="selectResponse()">
+                    <option value="" disabled selected>Please Select &#9662;</option>
                     <option value="Flash Flood">Flash Flood</option>
                     <option value="Hail">Hail</option>
                     <option value="Hurricane">Hurricane</option>
                     <option value="Thunderstorm">Thunderstorm</option>
                     <option value="Tornado">Tornado</option>
                 </select>
+                <div id="selected"></div>
                 
                 <div>Are You in Danger?</div>
                 <label class="sbs"><input type="radio" name="threat" value="yes"> Yes</label>
