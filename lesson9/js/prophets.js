@@ -19,14 +19,16 @@ for (let i=0; i < prophets.length; i++) {
     h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
     year.textContent = 'Prophet for ' + prophets[i].length + ' years';
     bDay.textContent = 'Birth Day: ' + prophets[i].birthdate;
-    bPlace.textContent = 'Birth Place: ' + prophets[i].birthplace + '<mybr>';
+    bPlace.textContent = 'Birth Place: ' + prophets[i].birthplace;
+    mybr.textContent = prophets[i];
     
     card.appendChild(h2);
     card.appendChild(year);
     card.appendChild(bDay);    
-    card.appendChild(bPlace);    
-    card.appendChild(image);
+    card.appendChild(bPlace);
     card.appendChild(mybr);
+    card.appendChild(image);
+    
     
     image.setAttribute('src', prophets[i].imageurl);
     
