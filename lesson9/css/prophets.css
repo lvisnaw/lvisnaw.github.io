@@ -69,6 +69,7 @@ main div section:hover {
 section img {
     max-height: 60vw;
     box-shadow: 0 10px 25px 0 var(--accent1-color);
+    border-radius: 5px;
 }
 footer, footer a, footer p {
     background-color: var(--accent1-color);
