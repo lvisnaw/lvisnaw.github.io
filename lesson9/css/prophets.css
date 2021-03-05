@@ -51,6 +51,7 @@ main div.cards {
 main section {
     border: 1px solid #999;
     background-color: var(--accent2-color);
+    border-radius: 4px;
     margin: .5rem;
     padding: 10px 5px 20px 5px;
     box-shadow: 0 5px 8px;
@@ -67,9 +68,10 @@ main div section:hover {
     box-shadow: 0 0 50px #333;
 }
 section img {
-    max-height: 60vw;
+    max-width: 90%;
     box-shadow: 0 10px 25px 0 var(--accent1-color);
-    border-radius: 5px;
+    border-radius: 4px;
+    object-fit: scale-down;
 }
 footer, footer a, footer p {
     background-color: var(--accent1-color);
