@@ -1,0 +1,65 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        margin: auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav button {display: none;}
+    
+nav ul.hide {display: block;}
+
+/*----------- MAIN --------------*/
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed var(--secondary-color);
+    padding: 15px;
+    background-color: rgba(169, 214, 229, 1);    
+}
+main {
+        padding: .2rem 2%;
+        max-width: 64rem;  
+    }
+main figure {
+        margin: 0 auto;
+    }
+main div figure.wImg {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+main div.wHeading {
+    text-align: left;
+    margin: 0 .5rem;
+}
+.fiveDayImgPlaceHolder {
+   background-color: rgba(169, 214, 229, 0.6);
+   padding: 1rem 1rem 1rem 1rem;
+}
+
+/*----------- FORM --------------*/
+form fieldset {
+    width: 90%;
+}
+form label.sbs {
+    padding: .4rem 0;
+}
+form label.top input, form select, form label.top textarea, form label select option, div#selected {
+        max-width: 30rem;
+}
+    
+/*----------- FOOTER --------------*/
+
+    
+} /* end of media query */
