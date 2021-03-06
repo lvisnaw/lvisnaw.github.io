@@ -33,6 +33,7 @@ for (let i=0; i < prophets.length; i++) {
     
     
     image.setAttribute('src', prophets[i].imageurl);
+    image.setAttribute('loading', 'lazy');
     image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].length);
     
     document.querySelector('div.cards').appendChild(card);
