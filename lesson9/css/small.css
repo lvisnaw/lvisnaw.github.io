@@ -150,7 +150,7 @@ main div.thankYou {
     padding: 15px;
     background-color: rgba(255, 153, 153, 0.3);    
 }
-
+.wireFrameCenter {text-align: center; padding: 2%}
 /*----------- FORM --------------*/
 
 main h1.formH1 {padding: .2rem 2%;}
