@@ -35,7 +35,7 @@ fetch(requestURL)
         motto.innerHTML = `${town.motto}`;
         year.innerHTML = `<br>Year Founded - ${town.yearFounded}`;
         population.innerHTML = `Population - ${town.currentPopulation}`;
-        rain.innerHTML = `Annual Rain Fall - ${town.averageRainfall}<br><br>`;
+        rain.innerHTML = `Annual Rain Fall - ${town.averageRainfall}"<br><br>`;
         
         //Adding class
         info.setAttribute("class", `info`);
