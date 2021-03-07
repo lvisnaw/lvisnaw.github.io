@@ -85,7 +85,7 @@ footer, footer a, footer p {
         grid-template-columns: 1fr 1fr;
     }
     section img {
-        max-width: 90%;
+        max-width: 200px;
     }
 }
 @media screen and (min-width: 65rem) {
