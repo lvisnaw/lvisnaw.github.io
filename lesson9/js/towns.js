@@ -9,7 +9,7 @@ fetch(requestURL)
     .then(function (jsonObject) {
         console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject["towns"];
-        const cards = document.querySelector("div.cards");
+        const cards = document.querySelector(".towncards");
         //Filter for specific towns
         const townfilter = towns.filter(
             (town) =>
@@ -32,9 +32,9 @@ fetch(requestURL)
         //Page layout
         title.innerHTML = `${town.name}`;
         motto.innerHTML = `${town.motto}`;
-        year.innerHTML = `Year Founded - ${town.yearFounded}`;
+        year.innerHTML = `<br>Year Founded - ${town.yearFounded}`;
         population.innerHTML = `Population - ${town.currentPopulation}`;
-        rain.innerHTML = `Annual Rain Fall - ${town.averageRainfall}`;
+        rain.innerHTML = `Annual Rain Fall - ${town.averageRainfall}<br><br>`;
         
         data.setAttribute("class", `data`);
         

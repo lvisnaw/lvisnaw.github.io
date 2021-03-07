@@ -1,5 +1,5 @@
 /* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 65rem) {
 
     header, nav, main, footer {
         margin: auto;
@@ -47,7 +47,37 @@ main div.wHeading {
    background-color: rgba(169, 214, 229, 0.6);
    padding: 1rem 1rem 1rem 1rem;
 }
-
+    
+/*------ Home Page Cards ---------*/
+main div.towncards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    padding: 20px;
+}
+main div.towncards h2 {
+    font-size: 2rem;
+    margin: auto;
+    color: var(--accent4-color);
+    background-color: var(--accent1-color);
+    padding: 10px 0 5px 0;
+    border-radius: 4px 4px 0 0;
+}
+main div.towncards h3 {
+    margin: auto;
+    color: var(--accent4-color);
+    background-color: var(--accent1-color);
+    font-size: .8rem;
+    padding: 0 0 15px 0;
+}
+main div.towncards p {
+    margin: auto;
+    line-height: 20px;
+}
+main div.towncards section a div.data {
+    display: block;
+}
+    
 /*----------- FORM --------------*/
 form fieldset {
     width: 90%;
