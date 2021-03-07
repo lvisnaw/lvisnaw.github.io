@@ -49,12 +49,15 @@ main div.wHeading {
 }
     
 /*------ Home Page Cards ---------*/
-main div.towncards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5px;
-    padding: 20px;
-}
+    main div.towncards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+        padding: 20px;
+    }
+    main div.towncards a {
+        display: block;
+    }
     main div.towncards section {
         display: grid;
         grid-template-columns: 1fr;
@@ -67,28 +70,33 @@ main div.towncards {
         padding: 0 0 20px 0;
         box-shadow: 0 5px 8px;
     }
-main div.towncards h2 {
-    font-size: 2rem;
-    margin: auto;
-    color: var(--accent4-color);
-    background-color: var(--accent1-color);
-    padding: 10px 0 5px 0;
-    border-radius: 4px 4px 0 0;
-}
-main div.towncards h3 {
-    margin: auto;
-    color: var(--accent4-color);
-    background-color: var(--accent1-color);
-    font-size: .7rem;
-    padding: 0 0 15px 0;
-}
-main div.towncards p {
-    margin: auto;
-    line-height: 20px;
-}
-main div.towncards section a div.info {
-    display: block;
-}
+    main section div.title {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-top: 0;
+    }
+    main div.towncards h2 {
+        font-size: 2rem;
+        margin: auto;
+        color: var(--accent4-color);
+        background-color: var(--accent1-color);
+        padding: 10px 0 5px 0;
+        border-radius: 4px 4px 0 0;
+    }
+    main div.towncards h3 {
+        margin: auto;
+        color: var(--accent4-color);
+        background-color: var(--accent1-color);
+        font-size: .7rem;
+        padding: 0 0 15px 0;
+    }
+    main div.towncards p {
+        margin: auto;
+        line-height: 20px;
+    }
+    main div.towncards section a div.info {
+        display: block;
+    }
     main div.towncards img.imgCard {
         width: 90%;
     }
