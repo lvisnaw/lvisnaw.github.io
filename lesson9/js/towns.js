@@ -20,13 +20,14 @@ fetch(requestURL)
     //Pulling content from json file
     townfilter.forEach((town) => {
         let card = document.createElement("section");
+        let heading = document.createElement('div');
         let title = document.createElement("h2");
         let motto = document.createElement("h3");
         let image = document.createElement("img");
         let year = document.createElement("p");
         let population = document.createElement("p");
         let rain = document.createElement("p");
-        let data = document.createElement("div");
+        let info = document.createElement("div");
         let connect = document.createElement("a");
     
         //Page layout
@@ -36,8 +37,11 @@ fetch(requestURL)
         population.innerHTML = `Population - ${town.currentPopulation}`;
         rain.innerHTML = `Annual Rain Fall - ${town.averageRainfall}<br><br>`;
         
-        data.setAttribute("class", `data`);
+        //Adding class
+        info.setAttribute("class", `info`);
+        heading.setAttribute('class', 'title');
         
+        //Image call from local file
         let location = `${town.photo}`;
         let local = location.replace("jpg", "html");
         
@@ -46,13 +50,16 @@ fetch(requestURL)
         image.setAttribute("src", `images/${town.photo}`);
         image.setAttribute("alt", `${town.name}, Idaho`);
         image.setAttribute("loading", "lazy");
+        image.setAttribute('class', 'imgCard');
         
-        connect.append(title);
-        connect.append(motto);
-        connect.append(data);
-        data.append(year);
-        data.append(population);
-        data.append(rain);
+        //Building section
+        connect.append(heading);
+        heading.append(title);
+        heading.append(motto);
+        connect.append(info);
+        info.append(year);
+        info.append(population);
+        info.append(rain);
         connect.append(image);
         card.append(connect);
         cards.append(card);

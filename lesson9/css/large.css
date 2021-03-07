@@ -67,16 +67,19 @@ main div.towncards h3 {
     margin: auto;
     color: var(--accent4-color);
     background-color: var(--accent1-color);
-    font-size: .8rem;
+    font-size: .7rem;
     padding: 0 0 15px 0;
 }
 main div.towncards p {
     margin: auto;
     line-height: 20px;
 }
-main div.towncards section a div.data {
+main div.towncards section a div.info {
     display: block;
 }
+    main div.towncards img {
+        width: 90%;
+    }
     
 /*----------- FORM --------------*/
 form fieldset {

@@ -134,51 +134,51 @@
     }
     
 /*------ Home Page Cards ---------*/
-main div.towncards section {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: var(--heading-font);
-    text-align: center;
-    max-width: 600px;
-    background-color: var(--accent2-color);
-    border-radius: 4px;
-    margin: .5rem auto;
-    padding: 0 0 20px 0;
-    box-shadow: 0 5px 8px;
-}
-main div.towncards section {
-    display: flex;
-    flex-direction: row;
-}
-main div.towncards section {
-    display: flex;
-}
-main div.towncards section:nth-child(odd) {
-    flex-direction: row-reverse;
-}
-main div.towncards section a div.data {
-    display: flex;
-    flex-direction: row;
-}
-main div.towncards h2 {
-    font-size: 2.5rem;
-    margin: auto;
-    color: var(--accent1-color);
-    background-color: var(--accent2-color);
-    padding: 10px 0 5px 0;
-    border-radius: 4px 4px 0 0;
-}
-main div.towncards h3 {
-    margin: auto;
-    color: var(--accent1-color);
-    background-color: var(--accent2-color);
-    font-size: 1.3rem;
-    padding: 0 0 15px 0;
-}
-main div.towncards p {
-    margin: auto;
-    line-height: 20px;
-}
+    main div.towncards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: var(--heading-font);
+        text-align: center;
+        max-width: 45rem;
+        background-color: var(--accent2-color);
+        border-radius: 4px;
+        margin: .5rem auto;
+        padding: 0;
+        box-shadow: 0 5px 8px;
+    }
+    main div.towncards section img:nth-child(odd) {
+        
+    }
+    main div.towncards section a div.title {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    main div.towncards h2 {
+        font-size: 2.5rem;
+        margin: auto;
+        color: var(--accent1-color);
+        background-color: var(--accent2-color);
+        padding: 10px 0 5px 0;
+        border-radius: 4px 4px 0 0;
+    }
+    main div.towncards h3 {
+        margin: auto;
+        color: var(--accent1-color);
+        background-color: var(--accent2-color);
+        font-size: 1.3rem;
+        padding: 0 0 15px 0;
+    }
+    main div.towncards p {
+        margin: auto;
+        line-height: 20px;
+    }
+    main div.towncards section img {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0px 0px;
+    }
 
 /*----------- FOOTER --------------*/
     form label.sliderContainer input.slider {
