@@ -191,7 +191,7 @@ main div.towncards p {
 main div.towncards a {
     text-decoration: none;
 }
-main div.towncards img {
+main div.towncards img.imgCard {
     width: 90%;
     border-radius: 10px;
     box-shadow: 0 5px 8px var(--accent1-color);
