@@ -42,7 +42,7 @@ const weatherForcast = (forecastData, dayOfWeek) => {
     weatherIcon.src = iconPath;
     weatherIcon.setAttribute('alt', forecastData.weather[0].description);
     weatherIcon.classList.add('imgFDay');
-    forecastTemp.textContent = Math.round(forecastData.main.temp *10)/10 + '\xb0 F';    
+    forecastTemp.textContent = Math.round(forecastData.main.temp * 10) / 10 + '\xb0 F';    
     
     //Add context
     //connect.append(subSection);
