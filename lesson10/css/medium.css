@@ -128,11 +128,16 @@
         width: 25%;
         height: auto;
         float: right;
-        margin: 3% 2%;
+        margin: 0 2% 0 1%;
     }
     article h3, p {
         padding: 0 5px;
         margin: 2%;
+    }
+    article h3 {font-size: 1.5rem;}
+    article p {
+        font-size: .8rem;
+        line-height: 16px;
     }
 
 /*----------- fDay --------------*/
