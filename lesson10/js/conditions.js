@@ -65,9 +65,9 @@ fetch(apiURL)
         const f = parseFloat(jsObject.list[0].main.temp)
         const s = parseFloat(jsObject.list[0].wind.speed)
         
-        let windChill = Math.round(35.74 + (0.6215 * f) -
-            (35.75 * Math.pow(s, 0.16)) +
-            (0.4275 * f * Math.pow(s, 0.16)));
+        // Calulates windchill and returns results to function doInputOutput()
+        // Formula = 35.74 + 0.6215 * tempF - 35.75 * wSpeed^0.16 + 0.4275 * tempF * wSpeed^0.16
+        let windChill = Math.round(35.74 + (0.6215 * f) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * f * Math.pow(s, 0.16)));
         
         if (f >= 52 || s <= 3) {
             document.getElementById("windChill").textContent = "N/A"
