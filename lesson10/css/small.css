@@ -254,7 +254,7 @@ main section.fDay p {
     padding-bottom: 10px;
 }
 main div.fiveDayForcastNew section {
-    width: 200px;
+    
     display: block;
     border: 1px solid var(--accent1-color);
 }
