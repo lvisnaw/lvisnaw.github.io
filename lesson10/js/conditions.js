@@ -20,7 +20,7 @@ const weatherForcast = (forecastData, dayOfWeek) => {
     
     //Create Cards
     let card = document.createElement('section');
-    let subSection = document.createElement('div');
+    //let subSection = document.createElement('div');
     let title = document.createElement('h4');
     let weatherIcon = document.createElement('img');
     let iconCode = forecastData.weather[0].icon;
@@ -58,7 +58,7 @@ fetch(apiURL)
         const forecastList = jsObject.list
 
         // Weather Summary
-        document.getElementById('currentWeather').textContent = jsObject.list[0].weather[0].description;
+        document.getElementById('currentWeather').textContent = jsObject.list[0].weather[0].description.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
         document.getElementById('currentTemp').textContent = Math.round(jsObject.list[0].main.temp * 10)/10 + '\xb0 F';
         document.getElementById('humidity').textContent = jsObject.list[0].main.humidity + '%';
         document.getElementById('windSpeed').textContent = Math.round(jsObject.list[0].wind.speed *10)/10 + ' mph';
