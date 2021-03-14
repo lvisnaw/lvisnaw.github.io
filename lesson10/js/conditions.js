@@ -70,9 +70,9 @@ fetch(apiURL)
         let windChill = Math.round(35.74 + (0.6215 * f) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * f * Math.pow(s, 0.16)));
         
         if (f >= 52 || s <= 3) {
-            document.getElementById("windChill").textContent = "N/A"
+            document.getElementById('windChill').textContent = 'N/A'
         } else {
-            document.getElementById("windChill").textContent = windChill + '\xb0 F'
+            document.getElementById('windChill').textContent = windChill + '\xb0 F'
         }
 
         // Five Day Forecast
