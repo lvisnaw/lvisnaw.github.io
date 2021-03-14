@@ -63,8 +63,42 @@
     
 <!-- CONTENT HERE -->
     <main class="center">
-        <div class="wHeading">
-            <h2 class="wireFrameCenter">Preston 5 Day is working on the homepage, just not here for some reason.</h2>
+        <h2>Preston Idaho</h2>
+        <div class="mainHero clearfix">
+            <picture class="mainImg">
+                <source media="(max-width: 400px)" srcset="images/hero-400x400.jpg">
+                <source media="(max-width: 600px)" srcset="images/hero-600x400.jpg">
+                <source media="(max-width: 1200px)" srcset="images/hero-1000x500.jpg">
+                <img src="images/hero-1000x500.jpg" id="heroImg" alt="Preston Idaho Hero" />
+            </picture>                
+            <section class="placeHolder clearfix">
+                <h3>Weather Summary</h3>
+                <hr>
+                <table class="smCenter">
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td><span id="currentWeather"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High:</td>
+                            <td><span id="currentTemp"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="windSpeed"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td><span id="humidity"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
         <!-- 5-Day Forcast Cards: BEGIN -->
         <h3 id="fDayHeader">5-Day Forcast</h3>
