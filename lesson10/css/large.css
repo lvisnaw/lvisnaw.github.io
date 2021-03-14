@@ -109,7 +109,9 @@ main section.fDay {
     margin: 2%;
 }
 main div#fCard {
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 2% auto;
     justify-content: center;
     background-color: rgba(169, 214, 229, 0.6);
 }
