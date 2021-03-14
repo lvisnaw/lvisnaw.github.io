@@ -136,15 +136,16 @@
     }
 
 /*----------- fDay --------------*/
-main section.fDay {
-    margin: 2%;
-}
 main div#fCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 1rem;
     max-width: 100%;
+    margin: 2% auto 5%;
     justify-content: center;
     background-color: rgba(169, 214, 229, 0.6);
 }
+#fCard h4, p {font-size: 1.3vw;}
 #fCard h4 {
     display: block;
     padding: 1rem;
@@ -166,8 +167,7 @@ main section.fDay p {
     padding-bottom: 10px;
 }
 main div.fiveDayForcastNew section {
-    width: 175px;
-    display: table-cell;
+    width: 90%;
     border: 1px solid var(--accent1-color);
 }
 
