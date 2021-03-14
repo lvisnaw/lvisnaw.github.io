@@ -150,7 +150,7 @@ main div#fCard {
     justify-content: center;
     background-color: rgba(169, 214, 229, 0.6);
 }
-#fCard h4, p {font-size: 1.3vw;}
+#fCard h4, p {font-size: 1.2vw;}
 #fCard h4 {
     display: block;
     padding: 1rem;
