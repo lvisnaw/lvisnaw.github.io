@@ -84,7 +84,6 @@ fetch(apiURL)
                     forecastDayNumber = 0
                 }
                 weatherForcast(forecastList[i], weekDay[forecastDayNumber])
-
             }
         }
     });
