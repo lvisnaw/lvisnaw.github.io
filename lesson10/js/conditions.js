@@ -62,17 +62,17 @@ fetch(apiURL)
         document.getElementById('currentTemp').textContent = Math.round(jsObject.list[0].main.temp * 10)/10 + '\xb0 F';
         document.getElementById('humidity').textContent = jsObject.list[0].main.humidity + '%';
         document.getElementById('windSpeed').textContent = Math.round(jsObject.list[0].wind.speed *10)/10 + ' mph';
-        const tempNum = parseFloat(jsObject.list[0].main.temp)
-        const windSpeedNum = parseFloat(jsObject.list[0].wind.speed)
+        const f = parseFloat(jsObject.list[0].main.temp)
+        const s = parseFloat(jsObject.list[0].wind.speed)
         
-        let windChill = Math.round(35.74 + (0.6215 * tempNum) -
-            (35.75 * Math.pow(windSpeedNum, 0.16)) +
-            (0.4275 * tempNum * Math.pow(windSpeedNum, 0.16)));
+        let windChill = Math.round(35.74 + (0.6215 * f) -
+            (35.75 * Math.pow(s, 0.16)) +
+            (0.4275 * f * Math.pow(s, 0.16)));
         
-        if (tempNum <= 50 && windSpeedNum > 3) {
-            document.getElementById("windChill").textContent = windChill + '\xb0 F'
-        } else {
+        if (f >= 52 || s <= 3) {
             document.getElementById("windChill").textContent = "N/A"
+        } else {
+            document.getElementById("windChill").textContent = windChill + '\xb0 F'
         }
 
         // Five Day Forecast
