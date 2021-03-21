@@ -55,7 +55,7 @@
                 <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="storm-center.html">Storm Center</a></li>
-                <li><a href="gallery-7.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </div>
     </nav>
@@ -63,9 +63,59 @@
     
 <!-- CONTENT HERE -->
     <main class="center">
-        <div class="wHeading">
-            <h2 class="wireFrameCenter">Soda Springs Coming Soon</h2>
+        <h2>Preston Idaho</h2>
+        <div class="mainHero clearfix">
+            <picture class="mainImg">
+                <source media="(max-width: 400px)" srcset="images/sodasprings-400x400.jpg">
+                <source media="(max-width: 600px)" srcset="images/sodasprings-600x400.jpg">
+                <source media="(max-width: 1200px)" srcset="images/sodasprings-1000x500.jpg">
+                <img src="images/sodasprings-1000x500.jpg" id="heroImg" alt="Preston Idaho Hero" />
+            </picture>                
+            <section class="placeHolder clearfix">
+                <h3>Weather Summary</h3>
+                <hr>
+                <table class="smCenter">
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td><span id="currentWeather"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High:</td>
+                            <td><span id="currentTemp"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="windSpeed"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td><span id="humidity"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
+        <!-- Events: BEGIN -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <p>April 15, 2021: Join us for our annual tax spout off.</p>
+            <p>May 4, 2021: May the 4th be with you on this day where we light it up.</p>
+            <p>July 4, 2021: Really is there any better fireworks than natural ones? See you there.</p>
+        </section>
+        <!-- 5-Day Forcast Cards: BEGIN -->
+        <h3 id="fDayHeader">5-Day Forecast</h3>
+        <div class="fiveDayForcastNew" id="fCard"></div>
+        <!-- 5-Day Forcast Cards: END -->
+        <article>
+            <img src="images/ss-geyser.jpg" id="articleImage" alt="Weather Summary Hero" width="300" height="300" />
+            <h3>Oregon Trail Oasis for Historic Tours and Outdoor Adventure!</h3>
+            <p>Soda Springs boasts having the world’s only captive geyser. On November 30, 1937 in an attempt to find a hot water source for a local swimming pool, a well driller set free the natural geyser at a depth of 317 feet. It is located on Pyramid Spring, a travertine mound described by Fremont in his 1840s expeditions, along with other area springs. The history of Soda Springs and Caribou County is portrayed on picture boards in the Geyser Park Visitor Center. Historical artifacts and antiques are on display next door at the Enders Hotel Museum. Enter on Main Street & 1st Street South and drive 150 feet west to Geyser Park.&nbsp;</p>
+        </article>
     </main>
     
 <!-- FOOTER HERE -->   
@@ -94,5 +144,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
     <script src="js/lazy-load.js"></script>
+    <script src="js/sodasprings.js"></script>
 </body>
 </html>

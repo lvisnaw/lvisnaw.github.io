@@ -156,7 +156,10 @@ main div.thankYou {
     background-color: rgba(255, 153, 153, 0.3);    
 }
 .wireFrameCenter {text-align: center; padding: 2%}
-main article {padding: 20px 0 20px 0;}
+main article {
+    padding: 20px 0 30px 0;
+    border-radius: 4px;
+}
 main article img {
     border-radius: 4px;
     box-shadow: 0 5px 8px;
@@ -343,6 +346,25 @@ div#selected {
     max-width: 20rem;
     background-color: rgba(255, 204, 153,0.4);
     margin: .5rem 0;
+}
+/*----------- Events --------------*/
+main section.events {
+    border: 1px solid var(--accent1-color);
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: var(--accent2-color);
+    border-radius: 4px;
+    box-shadow: 0 5px 8px var(--accent1-color);
+}
+main section.events h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 30px;
+    margin: 0;
+}
+main section.events p {
+    padding: 1% 0 1% 2%;
+    margin: 0 0 10px 0;
 }
 
 /*----------- FOOTER --------------*/
