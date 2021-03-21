@@ -81,7 +81,7 @@ nav ul {
 nav ul li a {
     display: inline-block;
     color: var(--accent1-color);
-    padding: .5rem 0;
+    padding: .5rem;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
