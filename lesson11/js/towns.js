@@ -65,3 +65,27 @@ fetch(requestURL)
         cards.append(card);
     });
 })
+
+    /* Preston Events */
+
+    const prestonEventURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+    fetch(prestonEventURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (prestonObject) {
+            const towns = prestonObject['towns'];
+            for (let i = 0; i < towns.length; i++) {
+                if (towns[i].name == 'Preston') {
+                    let preston = document.createElement('div');
+                    for (let x = 0; x < towns[i].events.length; x++) {
+                        let info = document.createElement('p');
+                        info.textContent = towns[i].events[x];
+                        preston.appendChild(info);
+                        document.getElementById('preston').appendChild(preston);
+                    }
+                }
+            }
+
+        })

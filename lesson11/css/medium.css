@@ -252,6 +252,27 @@ main div.fiveDayForcastNew section {
     box-shadow: 0 5px 8px var(--accent1-color);
     }
 
+/*----------- Events --------------*/
+main section.events {
+    border: 1px solid var(--accent1-color);
+    margin: 20px auto;
+    max-width: 60%;
+    background-color: var(--accent2-color);
+    border-radius: 4px;
+    box-shadow: 0 5px 8px var(--accent1-color);
+}
+main section.events h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 25px;
+    margin: 0;
+}
+main section.events p {
+    text-align: center;
+    padding: 1% 0 1% 2%;
+    margin: 0 0 10px 0;
+}
+
 /*----------- FOOTER --------------*/
     form label.sliderContainer input.slider {
     display: block;

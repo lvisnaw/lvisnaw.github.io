@@ -351,7 +351,7 @@ div#selected {
 main section.events {
     border: 1px solid var(--accent1-color);
     margin: 20px auto;
-    max-width: 80%;
+    max-width: 98%;
     background-color: var(--accent2-color);
     border-radius: 4px;
     box-shadow: 0 5px 8px var(--accent1-color);
@@ -359,10 +359,12 @@ main section.events {
 main section.events h2 {
     text-align: center;
     background-color: var(--primary-color);
-    padding: 30px;
+    padding: 25px;
     margin: 0;
 }
 main section.events p {
+    text-align: center;
+    font-size: inherit;
     padding: 1% 0 1% 2%;
     margin: 0 0 10px 0;
 }
