@@ -3,7 +3,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* Collor Pallet https://coolors.co/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5 */
 :root {
---primary-color: #289fca;
+--primary-color: #00a5e3;
 --secondary-color: #292929;
 --accent1-color: #fdfdfd;
 --accent2-color: #A9D6E5;
@@ -327,8 +327,10 @@ form label.sliderContainer input.slider {
 }
 form input.submitBtn {
     border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--secondary-color);
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
