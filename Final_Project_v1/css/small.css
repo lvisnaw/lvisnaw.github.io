@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6, p, td, tr, div {
 }
 a:hover {cursor: pointer;}
 img[data-src] {filter: blur(0.2em);}
+.linkColor {color: var(--secondary-color);}
 /*----------- HEADER --------------*/
 section#message {
     background-color: orange;
