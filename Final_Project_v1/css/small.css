@@ -80,7 +80,7 @@ nav ul {
 
 nav ul li a {
     display: inline-block;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     padding: .5rem;
     text-decoration: none;
     font-size: .9rem;
