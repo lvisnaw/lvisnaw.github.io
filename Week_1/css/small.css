@@ -74,8 +74,6 @@ nav ul li.active a {
     color: var(--secondary-color);
 }
 
-nav ul.hide {display: none;}
-
 /*----------- ARTICAL -----------*/
 main article div {
     padding: 0 0 20px;
