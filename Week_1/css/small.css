@@ -1,0 +1,110 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* Collor Pallet */
+:root {
+--primary-color: #333;
+--secondary-color: #666;
+--active-color: #deb887;
+--hover-color: #00ddff;
+--accent3-color: #d0d0d0;
+--accent4-color: #ffffff;
+
+/* change the values below to your chosen font(s) */
+--heading-font: 'Lora', serif;
+--paragraph-font: 'Helvetica', 'Arial', sans-serif;    
+    
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.center {margin: 0 auto;}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+a:hover {cursor: pointer;}
+img[data-src] {filter: blur(0.2em);}
+/*----------- HEADER --------------*/
+header { padding: 3rem 2%;}
+header h1 {margin: 0; font-size: 4.5rem; text-align: center;}
+header h1 a {text-decoration: none; color: var(--primary-color);}
+header h2 {margin: 0; font-weight: normal; font-size: .7rem;}
+header div {margin: 0; font-weight: normal; font-size: 1rem;}
+
+/*----------- NAVIGATION --------------*/
+nav button {
+    margin: .2rem 2%;
+    color: var(--secondary-color);
+    border: none;
+    font-size: 1.6rem;
+}
+nav {
+    margin: 30px 0 0;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: var(--secondary-color);
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+nav ul li.active a {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+nav ul.hide {display: none;}
+
+/*----------- ARTICAL -----------*/
+main article div {
+    padding: 0 0 20px;
+    text-align: right;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+main h2 a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+section p a {
+    text-decoration: none;
+}
+/* .post-content {text-decoration: none;} */
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
