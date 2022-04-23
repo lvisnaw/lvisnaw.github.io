@@ -96,6 +96,7 @@ main {
 }
 main img {
     width: 100%;
+    max-width: 250px;
     height: auto;
     border-radius: 4px;
 }
